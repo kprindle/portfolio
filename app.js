@@ -69,8 +69,8 @@ app.get("/", (req, res) => {
 // })
 
 //routs with controllers
-app.use('/admin', adminRoutes);
-app.use('/jobs', jobRoutes);
+// app.use('/admin', adminRoutes);
+// app.use('/jobs', jobRoutes);
 
 //error handling
 app.use((req, res, next) => {
