@@ -60,6 +60,18 @@ app.use(methodOverride("_method"));
 app.get("/", (req, res) => {
 	res.render("index");
 });
+app.get("/coverLetter", (req, res) => {
+    res.render("coverLetter");
+})
+app.get("/experience", (req, res) => {
+	res.render("experience");
+});
+// app.get("/admin/login", (req, res) => {
+//     res.render("/admin/login");
+// })
+// app.get("/experience/newExperience", (req, res) => {
+//     res.render("./experience/newExperience");
+// })
 
 // app.get('/about', (req, res)=>{
 //     res.render('About');
