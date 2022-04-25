@@ -7,7 +7,7 @@ const session = require("express-session");
 const MongoStore = require("connect-mongo");
 const flash = require("connect-flash");
 const adminRoutes = require('./routes/adminRoutes');
-const jobRoutes = require('./routes/jobRoutes');
+const jobRoutes = require('./routes/jobsRoutes');
 
 //create application
 const app = express();
