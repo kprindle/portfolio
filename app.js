@@ -6,8 +6,8 @@ const mongoose = require("mongoose");
 const session = require("express-session");
 const MongoStore = require("connect-mongo");
 const flash = require("connect-flash");
-//const connectionRoutes = require('./routes/connectionRoutes');
-//const userRoutes = require('./routes/userRoutes');
+const adminRoutes = require('./routes/adminRoutes');
+const jobRoutes = require('./routes/jobRoutes');
 
 //create application
 const app = express();
