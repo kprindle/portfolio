@@ -6,8 +6,8 @@ const mongoose = require("mongoose");
 const session = require("express-session");
 const MongoStore = require("connect-mongo");
 const flash = require("connect-flash");
-const adminRoutes = require('./routes/adminRoutes');
-const jobRoutes = require('./routes/jobsRoutes');
+const adminRoutes = require("./routes/adminRoutes");
+const jobRoutes = require("./routes/experienceRoutes");
 
 //create application
 const app = express();
@@ -18,7 +18,7 @@ let host = "localhost";
 app.set("view engine", "ejs");
 
 mongoose
-	.connect("mongodb://localhost:27017/UNCCConnected", {
+	.connect("mongodb://localhost:27017/portfolio", {
 		useNewUrlParser: true,
 		useUnifiedTopology: true,
 	})
@@ -61,9 +61,9 @@ app.get("/", (req, res) => {
 	res.render("index");
 });
 app.get("/coverLetter", (req, res) => {
-    res.render("coverLetter");
-})
-app.get("/experience", (req, res) => {
+	res.render("coverLetter");
+});
+app.use("/experience", (req, res) => {
 	res.render("experience");
 });
 // app.get("/admin/login", (req, res) => {
@@ -81,8 +81,8 @@ app.get("/experience", (req, res) => {
 // })
 
 //routs with controllers
-// app.use('/admin', adminRoutes);
-// app.use('/jobs', jobRoutes);
+app.use('/admin', adminRoutes);
+app.use('/experience', experienceRoutes);
 
 //error handling
 app.use((req, res, next) => {
