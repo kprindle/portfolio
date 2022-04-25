@@ -7,7 +7,7 @@ const session = require("express-session");
 const MongoStore = require("connect-mongo");
 const flash = require("connect-flash");
 const adminRoutes = require("./routes/adminRoutes");
-const jobRoutes = require("./routes/experienceRoutes");
+const experienceRoutes = require("./routes/experienceRoutes");
 
 //create application
 const app = express();
@@ -63,9 +63,6 @@ app.get("/", (req, res) => {
 app.get("/coverLetter", (req, res) => {
 	res.render("coverLetter");
 });
-app.use("/experience", (req, res) => {
-	res.render("experience");
-});
 // app.get("/admin/login", (req, res) => {
 //     res.render("/admin/login");
 // })
@@ -81,7 +78,7 @@ app.use("/experience", (req, res) => {
 // })
 
 //routs with controllers
-app.use('/admin', adminRoutes);
+//app.use('/admin', adminRoutes);
 app.use('/experience', experienceRoutes);
 
 //error handling

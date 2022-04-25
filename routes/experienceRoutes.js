@@ -1,6 +1,8 @@
+const express = require("express");
 const controller = require("../controllers/experienceController");
 const { isLoggedIn } = require("../middlewares/auth");
-const router = express.router();
+
+const router = express.Router();
 
 router.get("/", controller.index);
 router.get("/new", controller.new);

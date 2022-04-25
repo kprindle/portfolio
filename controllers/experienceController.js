@@ -4,7 +4,7 @@ const model = require("../models/experience");
 exports.index = (req, res, next) => {
 	model
 		.find()
-		.then((experience) => res.render("./experience/experience", { experience }))
+		.then((experience) => res.render("experience", { experience }))
 		.catch((err) => next(err));
 };
 
@@ -27,4 +27,10 @@ exports.create = (req, res, next) => {
 		});
 };
 
+exports.edit = (req, res, next) => {
 
+}
+
+exports.delete = (req, res, next) => {
+
+}
