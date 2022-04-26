@@ -8,6 +8,7 @@ router.get("/", controller.index);
 router.get("/new", controller.new);
 router.post("/new", controller.create);
 router.get("/:id/edit", controller.edit);
+router.put("/:id", controller.update);
 router.delete("/:id/delete", controller.delete);
 
 module.exports = router;

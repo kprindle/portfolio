@@ -28,8 +28,40 @@ exports.create = (req, res, next) => {
 };
 
 exports.edit = (req, res, next) => {
-
+	let id = req.params.id;
+	model
+		.findById(id)
+		.then((experience) => {
+			if (experience) {
+				return res.render("./experience/editExperience", { experience });
+			} else {
+				let err = new Error("Cannot find a experience with id " + id);
+				err.status = 404;
+				next(err);
+			}
+		})
+		.catch((err) => next(err));
 }
+
+exports.update = (req, res, next) => {
+	let experience = req.body;
+	let id = req.params.id;
+	model
+		.findByIdAndUpdate(id, experience, {
+			useFindAndModify: false,
+			runValidators: true,
+		})
+		.then((experience) => {
+			return res.redirect("/experiences");
+		})
+		.catch((err) => {
+			if (err.name === "ValidationError") {
+				req.flash("error", err.message);
+				return res.redirect("/back");
+			}
+			next(err);
+		});
+};
 
 exports.delete = (req, res, next) => {
 

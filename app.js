@@ -8,6 +8,7 @@ const MongoStore = require("connect-mongo");
 const flash = require("connect-flash");
 const adminRoutes = require("./routes/adminRoutes");
 const experienceRoutes = require("./routes/experienceRoutes");
+const applicationRoutes = require("./routes/applicationRoutes")
 
 //create application
 const app = express();
@@ -36,7 +37,7 @@ app.use(
 		resave: false,
 		saveUninitialized: false,
 		store: new MongoStore({
-			mongoUrl: "mongodb://localhost:27017/UNCCConnected",
+			mongoUrl: "mongodb://localhost:27017/portfolio",
 		}),
 		cookie: { maxAge: 60 * 60 * 1000 },
 	})
@@ -45,7 +46,7 @@ app.use(
 app.use(flash());
 
 app.use((req, res, next) => {
-	res.locals.user = req.session.user || null;
+	res.locals.admin = req.session.admin || null;
 	res.locals.errorMessages = req.flash("error");
 	res.locals.successMessages = req.flash("success");
 	next();
@@ -80,6 +81,7 @@ app.get("/coverLetter", (req, res) => {
 //routs with controllers
 //app.use('/admin', adminRoutes);
 app.use('/experience', experienceRoutes);
+app.use("/applications", applicationRoutes);
 
 //error handling
 app.use((req, res, next) => {
