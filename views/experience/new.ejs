@@ -1,3 +1,40 @@
-<%- include('./partials/header.ejs')%>
+<%- include('../partials/header.ejs')%>
+<div class="form">
+	<form action="/experience/new" method="post">
+		<table>
+			<tr>
+				<td><label for="company">Company</label></td>
+				<td><input type="text" name="company" id="company" /></td>
+			</tr>
+			<tr>
+				<td><label for="jobTitle">Job Title</label></td>
+				<td><input type="text" name="jobTitle" id="jobTitle" /></td>
+			</tr>
+			<tr>
+				<td><label for="startDate">Start Date</label></td>
+				<td><input type="date" name="startDate" id="startDate" /></td>
+			</tr>
+            <tr>
+                <td><label for="EndDate">End Date</label></td>
+                <td><input type="date" name="endDate" id="endDate" /></td>
+            </tr>
+            <tr>
+                <td><label for="jobDescription">Job Description</label></td>
+                <td><textArea name="jobDescription" id="jobDescription" cols="25" rows="2"></textArea></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button>Submit</button></td>
+            </tr>
+		</table>
+	</form>
+</div>
+<%- include('../partials/footer.ejs')%>
 
-<%- include('./partials/footer.ejs')%>
+<style>
+    .form{
+        padding-top: 10%;
+        padding-bottom: 10%;
+        display: flex;
+        justify-content: center;
+    }
+</style>

@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 const experienceSchema = new Schema({
 	company: { type: "string", required: true },
 	jobTitle: { type: "string", required: true },
-	StartDate: { type: "date", required: true },
+	startDate: { type: "date", required: true },
 	endDate: { type: "date", required: true },
 	jobDescription: { type: "string", required: true },
 });

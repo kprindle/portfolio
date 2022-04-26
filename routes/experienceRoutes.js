@@ -6,8 +6,8 @@ const router = express.Router();
 
 router.get("/", controller.index);
 router.get("/new", controller.new);
-router.post("/new", isLoggedIn, controller.create);
-router.get("/:id/edit", isLoggedIn, controller.edit);
-router.delete("/:id/delete", isLoggedIn, controller.delete);
+router.post("/new", controller.create);
+router.get("/:id/edit", controller.edit);
+router.delete("/:id/delete", controller.delete);
 
 module.exports = router;

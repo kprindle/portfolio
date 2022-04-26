@@ -4,7 +4,7 @@ const model = require("../models/experience");
 exports.index = (req, res, next) => {
 	model
 		.find()
-		.then((experience) => res.render("experience", { experience }))
+		.then((experiences) => res.render("experience", { experiences }))
 		.catch((err) => next(err));
 };
 
@@ -17,7 +17,7 @@ exports.create = (req, res, next) => {
 	let experience = new model(req.body);
 	experience
 		.save()
-		.then((experience) => res.render("./experience/experience", { experience }))
+		.then((experience) => res.redirect('/experience'))
         .catch((err) => {
 			if (err.name === "ValidationError") {
 				req.flash("error", err.message);

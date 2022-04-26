@@ -1,7 +1,18 @@
 <%- include('./partials/header.ejs')%>
 <div>
 	<table>
-		<%experiences.forEach(experience=>{%> <%})%>
+		<%experiences.forEach(experience=>{%>
+            <tr>
+                <tr>
+                    <th>company name</th>
+                    <th>job title</th>
+                </tr>
+                <tr>
+                    <td>time worked</td>
+                </tr>
+            </tr>
+        <%})%>
 	</table>
 </div>
+<a href='/experience/new'>Add New Experience</a>
 <%- include('./partials/footer.ejs')%>
