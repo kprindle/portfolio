@@ -1,0 +1,54 @@
+<%- include('./partials/header.ejs')%>
+<div class="form">
+	<form action="/users/login" method="POST" class="form2">
+		<table>
+            <tr><td><h1>Login</h1></td></tr>
+			<tr>
+				<td><label for="username">username</label></td>
+				<td>
+					<input
+						type="username"
+						id="username"
+						name="username"
+						class="fixed-width"
+						required
+					/>
+				</td>
+			</tr>
+			<tr>
+				<td><label for="password">Password</label></td>
+				<td>
+					<input
+						type="password"
+						id="password"
+						name="password"
+						class="fixed-width"
+						required
+					/>
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="2" class="align-right"><button>Login</button></td>
+			</tr>
+		</table>
+	</form>
+</div>
+<%- include('./partials/footer.ejs')%>
+
+<style>
+    .form{
+        background-color: rgb(92, 99, 99);
+        padding-top: 10%;
+        padding-bottom: 10%;
+        display: flex;
+        justify-content: center;
+    }
+    .form2 {
+		background-color: rgba(255, 255, 255, 0.623);
+		padding-right: 10%;
+		padding-left: 10%;
+		padding-bottom: 50px;
+		box-shadow: 5px 10px #8888887a;
+	}
+</style>

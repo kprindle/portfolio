@@ -1,53 +1,33 @@
 <%- include('./partials/header.ejs')%>
-<div class="experience">
+<a class="button-15"href="https://github.com/kprindle" target="_blank" rel="noreferrer noopener">Github Page</a>
+<div class="application">
+    
+    <br>
 	<table class="table">
-		<%experiences.forEach(experience=>{%>
-            <div class="padding">
+		<%applications.forEach(application=>{%>
             <tr>
-                <th><h1 class="company"><%=experience.company%></h1></th>
+                <tr>
+                    <th>company name</th>
+                    <th>job title</th>
+                </tr>
+                <tr>
+                    <td>time worked</td>
+                </tr>
             </tr>
-            <tr>
-                <td><%=experience.jobTitle%></td>
-            </tr>
-            <tr>
-                <td>from: <%=experience.startDate%></td>
-                <td>to: <%=experience.endDate%></td>
-            </tr>
-            <tr>
-                <td colspan="2"><%=experience.jobDescription%></td>
-            </tr></div>
         <%})%>
 	</table>
 </div>
-<a class="button-15" href='/experience/new'>Add New Experience</a>
+<a class="button-15" href='/application/new'>Add New application</a>
 <%- include('./partials/footer.ejs')%>
 
 <style>
-    td, th{
-        float:left;
-        padding: 10px;
-        padding-right: 40px;
-    }
-    th{
-        padding-top: 50px;
-        font-size: 18px;
-    }
-    .Company{
-        color: rgb(78, 78, 78);    
-    }
-    .table{
-        background-color: rgba(255, 255, 255, 0.623);
-    }
-    .experience{
-        padding-right: 110px;
-        padding-left: 110px;
+    .application{
         background-color: rgb(92, 99, 99);
-        color: rgb(78, 78, 78);
+        color: white;
         padding-top: 2%;
         display:flex;
         padding-bottom: 2%;
         justify-content: center;
-        font-size: 25px;
     }
 
 .button-15 {
@@ -59,8 +39,7 @@
   color: #FFFFFF;
   cursor: pointer;
   direction: ltr;
-  display: flex;
-  justify-content: center;
+  display: block; 
   font-family: "SF Pro Text","SF Pro Icons","AOS Icons","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 17px;
   font-weight: 400;
@@ -68,7 +47,7 @@
   line-height: 1.47059;
   min-width: 30px;
   overflow: visible;
-  padding: 4px 15px;
+  padding: 15px;
   text-align: center;
   user-select: none;
   -webkit-user-select: none;
@@ -96,5 +75,10 @@
 .button-15:focus {
   box-shadow: rgba(131, 192, 253, 0.5) 0 0 0 3px;
   outline: none;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
 }
 </style>

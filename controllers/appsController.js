@@ -1,10 +1,10 @@
 const model = require("../models/application");
 
-//shows all job applications
+
 exports.index = (req, res, next) => {
 	model
 		.find()
-		.then((applications) => res.render("application", { applications }))
+		.then((applications) => res.render("applications", { applications }))
 		.catch((err) => next(err));
 };
 

@@ -5,13 +5,15 @@
 		<title>Kyle Prindle</title>
 	</head>
 	<div class="header">
-		<img class="profilePic" src="../images/profilePic.png" alt="ProfilePic" />\
+		<a href="/login"
+			><img class="profilePic" src="../images/profilePic.png" alt="ProfilePic"
+		/></a>
 		<h1>Kyle Prindle</h1>
 		<nav>
-			<a href="/">About Me</a>
-			<a href="/coverLetter">Cover Letter</a>
-			<a href="/experience">Job Experience</a>
-            <a href="/applications">Applications</a>
+			<a class="navLink" href="/">About Me</a>
+			<a class="navLink" href="/coverLetter">Cover Letter</a>
+			<a class="navLink" href="/experience">Job Experience</a>
+			<a class="navLink" href="/application">Projects</a>
 		</nav>
 	</div>
 
@@ -19,7 +21,7 @@
 		.header {
 			background-color: rgb(92, 99, 99);
 			padding-bottom: 2%;
-            padding-top: 2%;
+			padding-top: 2%;
 		}
 		.profilePic {
 			width: 10%;
@@ -27,12 +29,14 @@
 		.header {
 			text-align: center;
 		}
-        h1{
-            color: rgb(255, 255, 255);
-        }
-		a {
+		h1 {
+			color: rgb(255, 255, 255);
+			font-style: oblique;
+			font-variant: solid;
+		}
+		.navLink {
 			text-decoration: none;
-			padding: 20%;
+			padding: 20px;
 			background-image: linear-gradient(#42a1ec, #0070c9);
 			border: 1px solid #0077cc;
 			border-radius: 4px;
@@ -58,24 +62,24 @@
 			white-space: nowrap;
 		}
 
-		a:disabled {
+		.navLink:disabled {
 			cursor: default;
 			opacity: 0.3;
 		}
 
-		a:hover {
+		.navLink:hover {
 			background-image: linear-gradient(#51a9ee, #147bcd);
 			border-color: #1482d0;
 			text-decoration: none;
 		}
 
-		a:active {
+		.navLink:active {
 			background-image: linear-gradient(#3d94d9, #0067b9);
 			border-color: #006dbc;
 			outline: none;
 		}
 
-		a:focus {
+		.navLink:focus {
 			box-shadow: rgba(131, 192, 253, 0.5) 0 0 0 3px;
 			outline: none;
 		}
