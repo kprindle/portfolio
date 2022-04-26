@@ -1,8 +1,7 @@
 <%- include('./partials/header.ejs')%>
+<h1 class="center">Developed Projects</h1>
 <a class="button-15"href="https://github.com/kprindle" target="_blank" rel="noreferrer noopener">Github Page</a>
 <div class="application">
-    
-    <br>
 	<table class="table">
 		<%applications.forEach(application=>{%>
             <tr>
@@ -15,12 +14,16 @@
                 </tr>
             </tr>
         <%})%>
+        
 	</table>
 </div>
 <a class="button-15" href='/application/new'>Add New application</a>
 <%- include('./partials/footer.ejs')%>
 
 <style>
+    .center {
+        text-align: center;
+    }
     .application{
         background-color: rgb(92, 99, 99);
         color: white;

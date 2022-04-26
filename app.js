@@ -64,6 +64,9 @@ app.get("/", (req, res) => {
 app.get("/coverLetter", (req, res) => {
 	res.render("coverLetter");
 });
+app.get("/resume", (req, res) => {
+	res.render("resume");
+});
 app.get("/login", (req, res) => {
 	res.render("login");
 });
