@@ -14,7 +14,7 @@ const applicationRoutes = require("./routes/applicationRoutes");
 const app = express();
 
 //configure app
-let port = 3001;
+let port = 3000;
 let host = "localhost";
 app.set("view engine", "ejs");
 
@@ -70,12 +70,6 @@ app.get("/resume", (req, res) => {
 app.get("/login", (req, res) => {
 	res.render("login");
 });
-// app.get("/admin/login", (req, res) => {
-//     res.render("/admin/login");
-// })
-// app.get("/experience/newExperience", (req, res) => {
-//     res.render("./experience/newExperience");
-// })
 
 // app.get('/about', (req, res)=>{
 //     res.render('About');
@@ -87,6 +81,7 @@ app.get("/login", (req, res) => {
 //routs with controllers
 app.use("/experience", experienceRoutes);
 app.use("/application", applicationRoutes);
+app.use("/admin", adminRoutes);
 
 //error handling
 app.use((req, res, next) => {

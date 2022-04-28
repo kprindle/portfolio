@@ -2,9 +2,10 @@ const model = require("../models/application");
 
 
 exports.index = (req, res, next) => {
+	let admin = req.session.admin;
 	model
 		.find()
-		.then((applications) => res.render("applications", { applications }))
+		.then((applications) => res.render("applications", { applications, admin }))
 		.catch((err) => next(err));
 };
 

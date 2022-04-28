@@ -1,36 +1,68 @@
 <%- include('./partials/header.ejs')%>
 <h1 class="center">Developed Projects</h1>
-<a class="button-15"href="https://github.com/kprindle" target="_blank" rel="noreferrer noopener">Github Page</a>
+<a class="button-15"href="https://github.com/kprindle" target="_blank" rel="noreferrer noopener">Link to Github Page</a>
 <div class="application">
 	<table class="table">
+    <tr><th class="border-bottom">Descriptions of Projects</th></tr>
 		<%applications.forEach(application=>{%>
             <tr>
                 <tr>
-                    <th>company name</th>
-                    <th>job title</th>
+                    <th class = "title"><%=application.name%></th>
                 </tr>
                 <tr>
-                    <td>time worked</td>
+                    <td class="description"><%=application.description%></td>
                 </tr>
             </tr>
         <%})%>
         
 	</table>
 </div>
+<%if(admin){%>
 <a class="button-15" href='/application/new'>Add New application</a>
+<%}%>
+
 <%- include('./partials/footer.ejs')%>
 
 <style>
+  .title{
+    font-family: sans-serif;
+    font-size: 20px;
+  }
+  .description{
+    font-family: 'Times New Roman', Times, serif;
+
+  }
+   td, th{
+      padding-top: 5%;
+      padding-bottom: 7.5%;
+  }
+  td{
+    border-bottom: 1px solid black;
+  }
+  .border-bottom{
+    border-bottom: 1px solid black;
+  }
     .center {
         text-align: center;
     }
     .application{
         background-color: rgb(92, 99, 99);
         color: white;
-        padding-top: 2%;
+        padding-top: 4%;
         display:flex;
-        padding-bottom: 2%;
+        padding-bottom: 4%;
         justify-content: center;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    .table{
+    background-color: rgba(255, 255, 255, 0.623);
+    color: black;
+		padding-right: 10%;
+    padding-left: 10%;
+		padding-bottom: 50px;
+		box-shadow: 5px 10px #8888887a;
+    padding-top: 10%;
     }
 
 .button-15 {
@@ -50,7 +82,7 @@
   line-height: 1.47059;
   min-width: 30px;
   overflow: visible;
-  padding: 15px;
+  padding: 8px;
   text-align: center;
   user-select: none;
   -webkit-user-select: none;

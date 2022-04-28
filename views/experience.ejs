@@ -4,27 +4,32 @@
 		<%experiences.forEach(experience=>{%>
             <div class="padding">
             <tr>
-                <th><h1 class="company"><%=experience.company%></h1></th>
+                <th class="company"><h1><%=experience.company%></h1></th>
             </tr>
             <tr>
                 <td><%=experience.jobTitle%></td>
             </tr>
-            <tr>
+            <tr class="time">
                 <td>From: <%=experience.startDate%></td>
                 <td>To: <%=experience.endDate%></td>
             </tr>
             <tr>
-                <td colspan="2"><%=experience.jobDescription%></td>
+                <td colspan="2" class="description"><%=experience.jobDescription%></td>
             </tr>
         </div>
         <%})%>
         <caption><h1>Job Experience</h1></caption>
 	</table>
 </div>
+<%if(admin){%>
 <a class="button-15" href='/experience/new'>Add New Experience</a>
+<%}%>
 <%- include('./partials/footer.ejs')%>
 
 <style>
+    .time{
+        font-size: 18px;
+    }
     td, th{
         float:left;
         padding: 10px;
@@ -34,15 +39,28 @@
         padding-top: 50px;
         font-size: 18px;
     }
-    td{
-        font-family: sans-serif;
+    .company h1{
+        font-size: 20px;
+        font-family: "SF Pro Text","SF Pro Icons","AOS Icons","Helvetica Neue",Helvetica,Arial,sans-serif;
+        color: black;
+    }
+    .description{
+        font-size: 18px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding-bottom: 30px;
+        border-bottom: 1px solid black;
     }
     .Company{
-        color: rgb(78, 78, 78);    
+        color: black;  
     }
     .table{
         background-color: rgba(255, 255, 255, 0.623);
-        padding-bottom: 50px;
+    color: black;
+		padding-right: 10%;
+    padding-left: 10%;
+		padding-bottom: 10%;
+		box-shadow: 5px 10px #8888887a;
+    padding-top: 5%;
     }
     .experience{
         padding-right: 10%;

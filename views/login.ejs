@@ -1,8 +1,10 @@
 <%- include('./partials/header.ejs')%>
 <div class="form">
-	<form action="/users/login" method="POST" class="form2">
+	<form action="/admin/login" method="POST" class="form2">
 		<table>
-            <tr><td><h1>Login</h1></td></tr>
+			<tr>
+				<td><h1>Login</h1></td>
+			</tr>
 			<tr>
 				<td><label for="username">username</label></td>
 				<td>
@@ -29,7 +31,9 @@
 			</tr>
 
 			<tr>
-				<td colspan="2" class="align-right"><button>Login</button></td>
+				<td colspan="2" class="align-right">
+					<div class="centerButton"><button class="btn-grad">Login</button></div>
+				</td>
 			</tr>
 		</table>
 	</form>
@@ -37,18 +41,50 @@
 <%- include('./partials/footer.ejs')%>
 
 <style>
-    .form{
-        background-color: rgb(92, 99, 99);
-        padding-top: 10%;
-        padding-bottom: 10%;
-        display: flex;
-        justify-content: center;
-    }
-    .form2 {
+	.centerButton {
+		display: flex;
+		justify-content: center;
+		padding-top: 10%;
+	}
+	.form {
+		background-color: rgb(92, 99, 99);
+		padding-top: 10%;
+		padding-bottom: 10%;
+		display: flex;
+		justify-content: center;
+	}
+	.form2 {
 		background-color: rgba(255, 255, 255, 0.623);
 		padding-right: 10%;
 		padding-left: 10%;
 		padding-bottom: 50px;
 		box-shadow: 5px 10px #8888887a;
+	}
+
+	.btn-grad {
+		background-image: linear-gradient(
+			to right,
+			#403b4a 0%,
+			#e7e9bb 51%,
+			#403b4a 100%
+		);
+	}
+	.btn-grad {
+		margin: 10px;
+		padding: 15px 45px;
+		text-align: center;
+		text-transform: uppercase;
+		transition: 0.5s;
+		background-size: 200% auto;
+		color: white;
+		box-shadow: 0 0 20px #eee;
+		border-radius: 10px;
+		display: block;
+	}
+
+	.btn-grad:hover {
+		background-position: right center; /* change the direction of the change here */
+		color: #fff;
+		text-decoration: none;
 	}
 </style>
