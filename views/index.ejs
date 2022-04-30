@@ -1,3 +1,92 @@
 <%- include('./partials/header.ejs')%>
-
+<div class="dib">
+	<h1>About Me</h1>
+	<div >
+		<table class="content">
+			<tr>
+				<td><h2>What I've Done</h2></td>
+			</tr>
+			<tr>
+				<td>
+					<h3>
+						Throughout my time at UNCC I have gained knowledge and experience about a
+						various array of topics in the computer science field including software
+						development, cyber security, and computer Architecture. My interests lie
+						most in web applications, typically front-end web development. From the
+						classes that I have taken, I also have experience in full stack
+						development using JavaScript, html, and CSS. Along with this, I have some
+						knowledge of the back end from utilizing mongo DB or SQL.
+					</h3>
+				</td>
+			</tr>
+			<tr>
+				<td><h2>What I'm Doing</h2></td>
+			</tr>
+			<tr>
+				<td>
+					<h3>
+						I am currently finishing my last semester at the University of North
+						Carolina at Charlotte. In February I will graduate with a bachelors
+						degree in computer science with a concentration of Web and Mobile
+						Applications. I am currently working as a Valet in uptown Charlotte in 
+                        order to work through college but I am searching for a full time position
+                        in web developement starting in the beginning of 2023.
+					</h3>
+				</td>
+			</tr>
+			<tr>
+				<td><h2>What I Want To Do</h2></td>
+			</tr>
+			<tr>
+				<td>
+					<h3>
+						In the near future, I want to get into the web development space. I am
+						looking to get a position as a front-end developer. With my experience in
+						full stack, I think I am more geared towards the front end and can bring
+						more to the table as a front-end developer. I am excited to work in a team
+						atmosphere and think I can bring a leadership role in that environment.
+					</h3>
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>
 <%- include('./partials/footer.ejs')%>
+
+<style>
+	.dib {
+		background-color: rgb(92, 99, 99);
+		padding-right: 10%;
+		padding-left: 10%;
+		padding-bottom: 5%;
+	}
+	.content {
+		background-color: rgba(255, 255, 255, 0.623);
+		box-shadow: 15px 15px #313131e0;
+		display: flex;
+		justify-content: center;
+		padding-top: 2%;
+		padding-bottom: 5%;
+        /* text-align: center; */
+	}
+	.dib h1 {
+		color: black;
+        text-align: center;
+        padding-bottom: 2%;
+        font-size: 48px;
+        padding-top: 2%;
+	}
+
+	.content h2,
+	h3 {
+		color: black;
+        padding-left: 10%;
+        padding-right: 10%;
+	}
+    .content h2 {
+        padding-left: 15%;
+    }
+    .content h3 {
+        padding-bottom: 5%;
+    }
+</style>
