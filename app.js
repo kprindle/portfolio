@@ -19,10 +19,13 @@ let host = "localhost";
 app.set("view engine", "ejs");
 
 mongoose
-	.connect("mongodb://localhost:27017/portfolio", {
-		useNewUrlParser: true,
-		useUnifiedTopology: true,
-	})
+	.connect(
+		"mongodb+srv://kprindle:Kp48Masters_@instance1.kb8bs.mongodb.net/instance1?retryWrites=true&w=majority",
+		{
+			useNewUrlParser: true,
+			useUnifiedTopology: true,
+		}
+	)
 	.then(() => {
 		app.listen(port, host, () => {
 			console.log("Server is running on port", port);
