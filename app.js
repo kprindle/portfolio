@@ -40,7 +40,8 @@ app.use(
 		resave: false,
 		saveUninitialized: false,
 		store: new MongoStore({
-			mongoUrl: "mongodb://localhost:27017/portfolio",
+			mongoUrl:
+				"mongodb+srv://kprindle:Kp48Masters_@instance1.kb8bs.mongodb.net/instance1?retryWrites=true&w=majority",
 		}),
 		cookie: { maxAge: 60 * 60 * 1000 },
 	})
