@@ -3,17 +3,19 @@
 	<head class="background"> 
 		<meta charset="UTF-8" />
 		<title>Kyle Prindle</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body class="background">
-	
-	<nav class="header">
+	<div class="header">
+		<h1 class="name">Kyle Prindle</h1>
+	<nav>
 		<a class="navLink" href="#aboutMe">About Me</a>
 		<a class="navLink" href="#resume">Resume</a>
 		<a class="navLink" href="#projects">Projects</a>
 		<a href="#contact" class="navLink">Contact Me</a>
-		<h1 class="name">Kyle Prindle</h1>
 	</nav>
+	</div>
+	
 	<div class="parallax-about">
 	<a id="aboutMe">
 	<div class="title-outline">
@@ -59,27 +61,25 @@
 		</div>
 	</div>
 	<div class="outline">
-		<div><h2>What I've Done</h2></div>
+		
+		<div>
+			<img src="images/profile.jpg" alt="image of me" class="float-right">
+			<h2>Who is Kyle Prindle?</h2>
+		</div>
 		<div>
 			<h3>
-				Throughout my time at UNCC I have gained knowledge and experience about a
-				various array of topics in the computer science field including software
-				development, cyber security, and computer Architecture. My interests lie
-				most in web applications, typically front-end web development. From the
-				classes that I have taken, I also have experience in full stack development
-				using JavaScript, html, and CSS. Along with this, I have some knowledge of
-				the back end from utilizing mongo DB or SQL.
+				I am a current student of the University of North Carolina at Charlotte. 
+				I am currently set to gaduate in December of 2022 with a bachlors in computer science 
+				with a concentration in web and mobile applications. I have worked individually as well 
+				as in a team environment in order to develop a multitude of applications.
 			</h3>
 		</div>
-		<div><h2>What I'm Doing</h2></div>
+		<div><h2>Hobbies</h2></div>
 		<div>
 			<h3>
-				I am currently finishing my last semester at the University of North
-				Carolina at Charlotte. In December I will graduate with a bachelors degree
-				in computer science with a concentration of web and mobile applications. I
-				am currently working as a Valet in uptown Charlotte in order to work through
-				college but I am searching for a full time position in web developement
-				starting in the beginning of 2023.
+				When I am not consumed by my interests in tech, there are some things that I enjoy doing.
+				One of the biggest ones Is snowboarding. I grew up snowboarding in the mountains of the
+				north east. More of my hobbies include other sports such as soccer, basketball, and wake boarding.
 			</h3>
 		</div>
 		<div><h2>What I Want To Do</h2></div>
@@ -95,7 +95,6 @@
 	</div></div>
 	</div>
 	</div>
-	<div class="divider"></div>
 	<div class="parallax">
 	<a id="resume">
 	<div class="title-outline">	
@@ -105,32 +104,24 @@
 	</div>
 	<table class="resume-outline">
 		<tr>
-			<td colspan="2" class="resume"><img src="resume.png" alt="jpg" class="r2" /></td>
+			<td colspan="2" class="resume"><img src="images/resume.png" alt="jpg" class="r2" /></td>
 		</tr>
 	</table>	
 	</div>
-	<div class="divider"></div>
 	<div class="parallax-projects">
+
 	<a id="projects">
 	<div class="title-outline">
 		<div class="title" name="projects">
 			<h1 class="center">Projects</h1>
-		</div></a>
-		<div class="greyBack">
-		<a
-			class="button-15"
-			href="https://github.com/kprindle"
-			target="_blank"
-			rel="noreferrer noopener"
-			>Full Github Account</a
-		>
-	</div>	
+		</div></a>	
 	</div>
+	
 	<div class="project-outline">
 		<div class="project-center">
 		<div class="project">
 			<h2 class="project-title">SnowLink</h2>
-			<img src="project.jpg" alt="" class="project-pic" />
+			<img src="images/project.jpg" alt="" class="project-pic" />
 			<a
 				href="https://github.com/kprindle/SnowLink"
 				class="project-Github-link"
@@ -145,7 +136,7 @@
 
 		<div class="project">
 			<h2 class="project-title">UNCC Connected</h2>
-			<img src="project.jpg" alt="" class="project-pic" />
+			<img src="images/project.jpg" alt="" class="project-pic" />
 			<a
 				href="https://github.com/kprindle/UNCC-Connected"
 				class="project-Github-link"
@@ -160,7 +151,7 @@
 
 		<div class="project">
 			<h2 class="project-title">Personal Portfolio</h2>
-			<img src="project.jpg" alt="" class="project-pic" />
+			<img src="images/project.jpg" alt="" class="project-pic" />
 			<a
 				href="https://github.com/kprindle/portfolio"
 				class="project-Github-link"
@@ -175,7 +166,6 @@
 	</div>
 	</div>
 	</div>
-	<div class="divider"></div>
 	<div class="parallax-contact">
 	<a id="contact">
 	<div class="title-outline">
@@ -186,11 +176,11 @@
 
 	<div class="contact-outline">
 		<div class="contact" name="contact">
-			<form action="">
+			<form action="" >
 				<table class="formInput">
-					<tr></tr><td><input type="text" name="CompanyName" id="CompanyName" placeholder="Contact Name" class="contactForm"> </td></tr>
-					<tr></tr><td><input type="email" name="CompanyEmail" id="CompanyEmail" placeholder="Contact Email" class="contactForm"></td></tr>
-					<tr></tr><td><textArea type="textArea" placeholder="Description" class="contactForm"></textArea> </td></tr>
+					<tr></tr><td><input type="text" name="CompanyName" id="CompanyName" placeholder="Contact Name" class="contactForm" size="75"> </td></tr>
+					<tr></tr><td><input type="email" name="CompanyEmail" id="CompanyEmail" placeholder="Contact Email" class="contactForm" size="75"></td></tr>
+					<tr></tr><td><textArea type="textArea" placeholder="Description" class="contactForm" rows="10" cols="70"></textArea> </td></tr>
 				</table>
 			</form>
 			</div>
@@ -198,5 +188,4 @@
 
 	</div>
 	</div>
-	<div class="divider"></div>
 </html>

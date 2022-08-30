@@ -1,0 +1,364 @@
+
+.bottom {
+    padding-right: 3.33%;
+}
+
+.outline {
+    background-color: #bbc2cc;
+    box-shadow: 10px 0px 20px #000000e0;
+    display: inline-block;
+    max-width: 40%;
+    padding-left: 3%;
+    margin-right: 2%;
+    /* margin-bottom: 5%; */
+    margin-left: 2%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-right: 2%;
+}
+
+.title {
+    background-color: #bbc2cc;
+    color: black;
+    box-shadow: 10px 0px 20px #000000e0;
+    padding-left: 5%;
+    display: flex;
+}
+
+.title-outline {
+    padding-top: 6%;
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.background {
+    background-color: rgb(92, 99, 99);
+    padding: none;
+    margin: 0;
+}
+
+.header {
+    background-color: black;
+        min-height: 10px;
+        width: 100%;
+        color: white;
+        padding-top: 10px;
+        position:fixed;
+        min-height: 2px;
+        opacity: .7;
+}
+
+.navLink {
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 4px;
+    color: #ffffff;
+    cursor: pointer;
+    direction: ltr;
+    display: inline-block;
+    font-family: "SF Pro Text", "SF Pro Icons", "AOS Icons", "Helvetica Neue",
+        Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    min-width: 30px;
+    overflow: visible;
+    padding: 4px 15px;
+    vertical-align: baseline;
+    touch-action: manipulation;
+    white-space: nowrap;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.navLink:hover {
+    background-image: linear-gradient(#51a9ee, #147bcd);
+    border-color: #1482d0;
+    text-decoration: none;
+}
+
+.right {
+    float: right;
+    padding-left: 75.5%;
+    font-family: "Helvetica Neue", Helvetica, Arial;
+}
+
+.title-resume {
+    background-color: #bbc2cc;
+    color: black;
+    box-shadow: 10px 0px 20px #000000e0;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    margin-bottom: 5%;
+    display: flex;
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-top: 15%;
+}
+.resume-outline {
+    display: flex;
+    justify-content: center;
+}
+
+.resume {
+    background-color: #BBC2CC;
+    color: black;
+    box-shadow: 10px 0px 20px #000000e0;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.r2 {
+    box-shadow: 10px 0px 20px #000000e0;
+}
+
+.greyBack {
+    padding-right: 10%;
+    padding-left: 10%;
+    text-align: left;
+    padding-top: 5%;
+}
+
+.project {
+    width: 350px;
+    height: 450px;
+    background-color: #bbc2cc;
+    box-shadow: 10px 0px 20px #000000e0;
+    display: inline-block;
+    margin: 3%;
+}
+
+.project-outline {
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+}
+
+.project-title {
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.project-pic {
+    padding-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    box-shadow: 10px 15px #1a1a1a7a;
+}
+
+.project-links {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(#34bb71, #1f4e2b);
+    font-family: "SF Pro Text", "SF Pro Icons", "AOS Icons", "Helvetica Neue",
+        Helvetica, Arial, sans-serif;
+    padding: 5%;
+    width: 200px;
+    margin-left: 15%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    border-radius: 10px;
+}
+
+.project-Github-link {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(#9201e6, #5e017a);
+    font-family: "SF Pro Text", "SF Pro Icons", "AOS Icons", "Helvetica Neue",
+        Helvetica, Arial, sans-serif;
+    padding: 5%;
+    width: 200px;
+    margin-left: 15%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    border-radius: 10px;
+}
+
+.project-links:hover,
+.project-Github-link:hover,
+.button-15:hover {
+    color: black;
+    opacity: 75%;
+}
+
+.button-15 {
+    text-decoration: none;
+    background-image: linear-gradient(#9201e6, #5e017a);
+    border-radius: 4px;
+    color: #ffffff;
+    cursor: pointer;
+    direction: ltr;
+    display: block;
+    font-family: "SF Pro Text", "SF Pro Icons", "AOS Icons", "Helvetica Neue",
+        Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: -0.022em;
+    line-height: 1.47059;
+    min-width: 30px;
+    overflow: visible;
+    padding: 8px;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+}
+nav {
+    margin-bottom: 20px;
+}
+
+.headImage {
+    width: 73%;
+    size: cover;
+
+}
+.name{
+    text-align: none;
+    font-size: 24px;
+    float: right;
+    padding-right: 50px;
+    padding-bottom: 5px;
+
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("../images/grayback.jpg");
+
+    /* Set a specific height */
+    padding-bottom: 10%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-about {
+    /* The image used */
+    background-image: url("../images/mountains.jpg");
+
+    /* Set a specific height */
+    min-height: 940px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 5%;
+}
+
+.divider{
+    background-color: black;
+    min-height: 30px;
+    opacity: 0.10;
+    position: relative;
+}
+
+.footer {
+background-color: black;
+    min-height: 60px;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        position: fixed;
+        opacity: 0.7;
+
+}
+
+.parallax-projects{
+    /* The image used */
+        
+        background-image: url("../images/blue-black.jpg");
+        /* Set a specific height */
+        min-height: 940px;
+    
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 15%;
+}
+
+.parallax-contact {
+    /* The image used */
+    background-image: url("../images/blue-white.jpg");
+
+    /* Set a specific height */
+    min-height: 940px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 5%;
+}
+
+.contact {
+    background-color: #bbc2cc;
+    color: black;
+    box-shadow: 10px 0px 20px #000000e0;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-outline {
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-bottom: 5%;
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+.contactForm{
+    padding: 8px;
+    font-size: 20px;
+    background-color: #bbc2cc;
+    border-radius: 10px;
+    color: #1482d0;
+    border-color: #1482d0;
+    border-width: 2px;
+}
+::placeholder {
+    color: #1482d0;;
+    opacity: 1;
+}
+.float-right{
+    float: right;
+    padding-right: 50px;
+}
+
+.formInput{
+    border-spacing: 20px;
+    padding: 5%;
+}
+
+.aboutme{
+    background-color: #bbc2cc;
+        box-shadow: 10px 0px 20px #000000e0;
+        display: inline-block;
+        min-width: 100%;
+        padding-left: 3%;
+        margin-right: 2%;
+        /* margin-bottom: 5%; */
+        margin-left: 2%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-right: 2%;
+}
