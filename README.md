@@ -8,6 +8,8 @@ Will graduate with BS in comuter Science With A concentration in web and mobile 
 
 Skills:
 
+Front end development
+
 Projects:
 
 languages:
