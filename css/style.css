@@ -11,10 +11,36 @@
     padding-left: 3%;
     margin-right: 2%;
     /* margin-bottom: 5%; */
-    margin-left: 2%;
+    margin-left: 30%;
     padding-top: 5%;
     padding-bottom: 5%;
     padding-right: 2%;
+}
+
+.frontImage {
+    background-image: url("../images/background.png");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+}
+.headshot{
+    width: 600px;
+    max-height: 800px;
+    margin-top: 100px;
+    margin-left: 32.5%;
+    border-radius: 300px;
+    
+}
+.frontImage1 {
+    min-height: 1250px;
+    width: 1290px;
+    background-image: URL("../images/download.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 1250px;
 }
 
 .title {
@@ -50,7 +76,9 @@
         min-height: 2px;
         opacity: .7;
 }
-
+.link{
+    background-color: black;
+}
 .navLink {
     text-decoration: none;
     padding: 20px;
@@ -95,7 +123,18 @@
     display: flex;
     margin-left: 12%;
     margin-right: 12%;
-    margin-top: 15%;
+}
+.resumeLink:hover{
+    color: black; 
+}
+.resumeLink{
+    float: right;
+    margin-left: 100px;
+    margin-top: 30px;
+    text-decoration: none;
+    color: blue;
+    font-size: 24px;
+    font-family: "Helvetica Neue", Helvetica, Arial;
 }
 .resume-outline {
     display: flex;
@@ -133,8 +172,8 @@
 }
 
 .project-outline {
-    padding-left: 12.5%;
-    padding-right: 12.5%;
+    display: flex;
+    justify-content: center;
 }
 
 .project-title {
@@ -232,13 +271,13 @@ nav {
 }
 
 .parallax {
-    /* The image used */
-    background-image: url("../images/grayback.jpg");
+    
+    background-image: url("../images/background.png");
 
-    /* Set a specific height */
+    
     padding-bottom: 10%;
 
-    /* Create the parallax scrolling effect */
+   
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -246,13 +285,13 @@ nav {
 }
 
 .parallax-about {
-    /* The image used */
-    background-image: url("../images/mountains.jpg");
+    
+    background-image: url("../images/background.png");
 
-    /* Set a specific height */
+    
     min-height: 940px;
 
-    /* Create the parallax scrolling effect */
+   
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -280,28 +319,17 @@ background-color: black;
 }
 
 .parallax-projects{
-    /* The image used */
-        
-        background-image: url("../images/blue-black.jpg");
-        /* Set a specific height */
-        min-height: 940px;
     
-        /* Create the parallax scrolling effect */
+        
+        background-image: url("../images/background.png");     
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        padding-bottom: 15%;
 }
 
 .parallax-contact {
-    /* The image used */
-    background-image: url("../images/blue-white.jpg");
-
-    /* Set a specific height */
-    min-height: 940px;
-
-    /* Create the parallax scrolling effect */
+    background-image: url("../images/background.png"); 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
